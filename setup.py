@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 
 setup(
@@ -10,4 +10,5 @@ setup(
     author_email='buchanae@gmail.com',
     license='Apache',
     py_modules=['bolts'],
+    packages=find_packages(),
 )

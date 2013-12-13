@@ -1,14 +1,17 @@
-from setuptools import setup, find_packages
+from distutils.core import setup
 
 
 setup(
     name='bolts',
     description="Nuts and bolts. Small recipes I've found occasionally useful.",
-    long_description=open('README.md').read(),
-    version='1.1.0',
+    version='1.2.0',
     author='Alex Buchanan',
     author_email='buchanae@gmail.com',
-    license='Apache',
-    py_modules=['bolts'],
-    packages=find_packages(),
+    license='MIT',
+    py_modules=[
+        'bolts.initializer',
+        'bolts.keyedset',
+        'bolts.sampler',
+        'bolts.tree',
+    ],
 )
